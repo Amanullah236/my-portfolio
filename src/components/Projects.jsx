@@ -7,14 +7,14 @@ const projects = [
     title: "Exclusive Private Parties",
     desc: "A premium private events and celebration website with elegant UI/UX, cinematic hero sections, responsive design, and modern frontend animations built for luxury event experiences.",
     tech: ["Event Booking System", "Event Categories", "Event planning & coordination", "Custom event planning"],
-    image: "src/assets/images/projectimage/project images.jpeg",
+    image: "/images/projects/project images.jpeg",
     
   },
   {
     title: "Admin Dashboard (Management Panel)",
     desc: "The dashboard provides real-time insights into platform activity, ensuring smooth operation of all private events and luxury experiences. It is built with a focus on performance, security, and ease of use.",
     tech: ["User Management", "Event Scheduling System", "Payment Tracking"],
-    image: "src/assets/images/projectimage/image.png",
+    image: "/images/projects/image.png",
     github: "#",
     live: "#"
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "LuxeCart Commerce",
     desc: "A modern luxury eCommerce platform with real-time inventory, secure Stripe payments, responsive design, and advanced shopping experiences built using the MERN stack.",
     tech: ["Product Management System", "Real-Time Inventory System", "Smart Shopping Cart", "User Authentication System"],
-    image: "src/assets/images/projectimage/project3.png",
+    image: "/images/projects/project3.png",
     github: "#",
     live: "#"
   },

@@ -28,7 +28,7 @@ const About = () => {
 
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#D4AF37] shadow-[0_0_80px_rgba(212,175,55,0.3)] transition-all duration-700 group-hover:shadow-[0_0_120px_rgba(212,175,55,0.5)]">
               <img 
-                src="/src/assets/images/UMR16987.JPG.jpeg" 
+                src="/images/profile.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover md:grayscale brightness-90 md:brightness-75 group-hover:grayscale-0 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000" 
               />
