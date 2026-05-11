@@ -23,7 +23,7 @@ const projects = [
     title: "HealthPlus — Your Health Partner",
     desc: "HealthPlus is a healthcare management platform that provides online doctor appointments, medical consultations, and health services.",
     tech: ["Online Appointment Booking", "Doctor Profiles", "Online Consultation", "Event Showcase Sections","Contact & Inquiry Forms"],
-    image: "src/assets/images/projectimage/project4.png",
+    image: "/images/projects/project4.png",
     
   },
 
@@ -40,14 +40,14 @@ const projects = [
     title: "EduBridge — Global Learning Platform",
     desc: "EduBridge is an international online learning platform where students can join live courses, watch tutorials, and get certifications from teachers around the world.",
     tech: ["Online Course System", "Live Classes", "Video Tutorials Library", "Certification System"],
-    image: "src/assets/images/projectimage/project5.png",
+    image: "/images/projects/project5.png",
     
   },
   {
     title: "TravelVista — Explore The World",
     desc: "TravelVista is a modern travel and tourism website that helps users discover destinations, book hotels, and plan trips worldwide. It features a sleek design, interactive maps, and personalized recommendations for an unforgettable travel experience.",
     tech: ["Flight Booking System","Hotel Reservation", "Destination Explorer", ],
-    image: "src/assets/images/projectimage/project6.png",
+    image: "/images/projects/project6.png",
     
   },
 ];
