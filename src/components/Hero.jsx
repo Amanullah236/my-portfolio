@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaTerminal, FaLaptopCode } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaCode, FaTerminal } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -49,25 +50,29 @@ const Hero = () => {
 </p>
 
           <div className="flex flex-wrap gap-6 pt-6">
-            <button className="px-10 py-4 bg-[#D4AF37] text-black font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] active:scale-95">
-              Initiate Project
-            </button>
             <a 
-              href="/cv.pdf" 
-              download 
-              className="px-10 py-4 border border-[#D4AF37] text-[#D4AF37] font-black uppercase tracking-widest hover:bg-[#D4AF37] hover:text-black transition-all active:scale-95 flex items-center justify-center gap-2"
+              href="https://github.com/Amanullah236" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-10 py-4 bg-[#D4AF37] text-black font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] active:scale-95 text-center flex items-center justify-center"
             >
-              Download CV
+              Learn More
             </a>
+            <Link 
+              to="/resume" 
+              className="px-10 py-4 border border-[#D4AF37] text-[#D4AF37] font-black uppercase tracking-widest hover:bg-[#D4AF37] hover:text-black transition-all active:scale-95 flex items-center justify-center gap-2 text-center"
+            >
+              View Resume
+            </Link>
           </div>
         </motion.div>
 
         <motion.div 
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative hidden lg:flex justify-center lg:justify-end"
+          className="relative flex justify-center lg:justify-end w-full"
         >
           {/* Professional IDE Window */}
           <div className="relative w-full max-w-lg bg-[#0a0a0a] rounded-xl overflow-hidden border border-white/10 shadow-[0_30px_100px_rgba(0,0,0,0.8)]">
@@ -83,8 +88,8 @@ const Hero = () => {
             </div>
 
             {/* IDE Content */}
-            <div className="p-8 font-mono text-sm leading-relaxed">
-              <div className="flex gap-6">
+            <div className="p-4 md:p-8 font-mono text-xs md:text-sm leading-relaxed">
+              <div className="flex gap-4 md:gap-6">
                 <div className="text-white/10 text-right select-none space-y-1">
                   {['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'].map(n => <div key={n}>{n}</div>)}
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Optimized Component
 const About = () => {
@@ -14,33 +15,36 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-20 items-center">
           
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative flex-shrink-0 group"
-          >
-            <div className="absolute -inset-6 border border-[#D4AF37]/10 rounded-full animate-spin-slow opacity-50"></div>
-            <div className="absolute -inset-4 border-2 border-[#D4AF37]/30 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
-            <div className="absolute -inset-2 border border-white/5 rounded-full"></div>
-            <div className="absolute -top-2 -left-2 w-6 h-6 border-t-2 border-l-2 border-[#D4AF37] z-10"></div>
-            <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-2 border-r-2 border-[#D4AF37] z-10"></div>
+          <Link to="/resume" className="block relative flex-shrink-0 group cursor-pointer z-20">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+              viewport={{ once: true }}
+              className="relative transition-all duration-500"
+            >
+              <div className="absolute -inset-6 border border-[#D4AF37]/10 rounded-full animate-spin-slow opacity-50"></div>
+              <div className="absolute -inset-4 border-2 border-[#D4AF37]/30 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+              <div className="absolute -inset-2 border border-white/5 rounded-full"></div>
+              <div className="absolute -top-2 -left-2 w-6 h-6 border-t-2 border-l-2 border-[#D4AF37] z-10"></div>
+              <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-2 border-r-2 border-[#D4AF37] z-10"></div>
 
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#D4AF37] shadow-[0_0_80px_rgba(212,175,55,0.3)] transition-all duration-700 group-hover:shadow-[0_0_120px_rgba(212,175,55,0.5)]">
-              <img 
-                src="/images/profile.jpg" 
-                alt="Profile" 
-                className="w-full h-full object-cover md:grayscale brightness-90 md:brightness-75 group-hover:grayscale-0 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#D4AF37]/5 to-transparent h-1/2 w-full animate-scanline pointer-events-none opacity-0 group-hover:opacity-100"></div>
-            </div>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#D4AF37] shadow-[0_0_80px_rgba(212,175,55,0.3)] transition-all duration-700 group-hover:shadow-[0_0_120px_rgba(212,175,55,0.5)]">
+                <img 
+                  src="/images/profile.jpg" 
+                  alt="Profile" 
+                  className="w-full h-full object-cover md:grayscale brightness-90 md:brightness-75 group-hover:grayscale-0 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#D4AF37]/5 to-transparent h-1/2 w-full animate-scanline pointer-events-none opacity-0 group-hover:opacity-100"></div>
+              </div>
 
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-black border border-[#D4AF37] text-[#D4AF37] text-[10px] font-black px-8 py-3 rounded-sm uppercase tracking-[0.5em] shadow-[0_10px_30px_rgba(0,0,0,0.5)] whitespace-nowrap z-20 group-hover:-translate-y-2 transition-transform">
-              Engineer 01
-            </div>
-          </motion.div>
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-black border border-[#D4AF37] text-[#D4AF37] text-[10px] font-black px-8 py-3 rounded-sm uppercase tracking-[0.5em] shadow-[0_10px_30px_rgba(0,0,0,0.5)] whitespace-nowrap z-20 group-hover:-translate-y-2 transition-transform">
+                View Resume
+              </div>
+            </motion.div>
+          </Link>
 
-          <div className="space-y-12">
+          <div className="space-y-12 relative z-10">
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-[2px] bg-[#D4AF37]"></div>

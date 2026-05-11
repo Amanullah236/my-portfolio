@@ -74,16 +74,17 @@ const Projects = () => {
               key={project.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.08, zIndex: 50 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="group relative bg-white/[0.02] rounded-none overflow-hidden border border-white/5 hover:border-[#D4AF37]/50 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(212,175,55,0.1)]"
+              className="group relative bg-[#111115] rounded-3xl transition-all duration-500 border border-white/5 hover:border-[#D4AF37]/50 hover:shadow-[0_30px_100px_rgba(212,175,55,0.15)] cursor-none"
             >
               {/* Project Image */}
-              <div className="relative h-64 overflow-hidden block">
+              <div className="relative h-64 overflow-hidden rounded-t-3xl">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover md:grayscale brightness-90 md:brightness-75 transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0 group-hover:brightness-100"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-500"></div>
               </div>
@@ -91,7 +92,7 @@ const Projects = () => {
               <div className="p-8">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((t) => (
-                    <span key={t} className="text-[10px] font-black uppercase tracking-[0.2em] text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 border border-[#D4AF37]/20">
+                    <span key={t} className="text-[10px] font-black uppercase tracking-[0.2em] text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 border border-[#D4AF37]/20 rounded-md">
                       {t}
                     </span>
                   ))}
